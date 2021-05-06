@@ -12,6 +12,7 @@
         let total;
 
         switch (operacion.toLowerCase()) {
+
           case "suma":
             total = valor1 + valor2;
             console.log(
@@ -28,6 +29,7 @@
             total = valor1 * valor2;
             console.log("El multiplicación de " +valor1+ " y " +valor2+" es: " +total);
             break;
+
           case "division":
             if (valor2 == 0) {
               console.log("Error!, el denominador no pot ser 0 ");
@@ -37,6 +39,7 @@
             total = valor1 / valor2;
             console.log("El división de " + valor1 + " y " + valor2 + " es: " + total);
             break;
+            
           default:
             console.log("Error! debe elegir una operación indicada.");
         }
