@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nombre = ['e','d','u','a','4','r','d','o'];
+        var nombreString = 'Eduardo';
+        var vocales = ['a','e','i','o','u'];
+        var consonantes = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z'];
+        var numeros = ['1','2','3','4','5','6','7','8','9','0'];
+
+        // var patronVocales = /[aeiou]/gi;   # no captura la 'a' , posible pq es va dsp de U / problema cdo hay 2 vocales seguidas #
+        // var patronConsonantes = /[^aeiou]/gi;
+        // var patronNumeros = /[0-9]/g;
+        
+        // debugger
+        // for(var z=0;z<nombreString.length;z++){
+        //     if( patronVocales.test(nombreString[z]) ){
+        //         console.log('# He trobat una vocal: '+nombreString[z]);
+        //     }
+        // }
+
+        for(var i=0;i<nombre.length;i++){
+            for(var j=0;j<vocales.length;j++){
+                if( nombre[i] == vocales[j]){
+                    console.log('* He trobat una vocal: '+vocales[j]);
+                }
+            }
+            for(var k=0;k<consonantes.length;k++){
+                if( nombre[i] == consonantes[k]){
+                    console.log('* He trobar una consonante: '+consonantes[k]);
+                }
+            }
+            for(var l=0;l<numeros.length;l++){
+                if( nombre[i] == numeros[l]){
+                    console.log('* Els noms no tenen número: '+numeros[l]);
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>
