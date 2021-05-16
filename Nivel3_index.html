@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="Nivel3_style.css" />
+  </head>
+  <body>
+    <div class="calculadora">
+      <div id="pantalla">
+        <div id="operador_2"></div>
+        <div id="operador_1"></div>
+      </div>
+      <div class="teclas">
+        <button id="tecla_1" class="tecla" onclick="introduce(document.getElementById('tecla_1').innerHTML)">1</button>
+        <button id="tecla_2" class="tecla" onclick="introduce(document.getElementById('tecla_2').innerHTML)">2</button>
+        <button id="tecla_3" class="tecla" onclick="introduce(document.getElementById('tecla_3').innerHTML)">3</button>
+        <button class="tecla_op" onclick="operacion(1)">+</button>
+        <button id="tecla_4" class="tecla" onclick="introduce(document.getElementById('tecla_4').innerHTML)">4</button>
+        <button id="tecla_5" class="tecla" onclick="introduce(document.getElementById('tecla_5').innerHTML)">5</button>
+        <button id="tecla_6" class="tecla" onclick="introduce(document.getElementById('tecla_6').innerHTML)">6</button>
+        <button class="tecla_op" onclick="operacion(2)">-</button>
+        <button id="tecla_7" class="tecla" onclick="introduce(document.getElementById('tecla_7').innerHTML)">7</button>
+        <button id="tecla_8" class="tecla" onclick="introduce(document.getElementById('tecla_8').innerHTML)">8</button>
+        <button id="tecla_9" class="tecla" onclick="introduce(document.getElementById('tecla_9').innerHTML)">9</button>
+        <button class="tecla_op" onclick="operacion(3)">*</button>
+        <button id="tecla_punto" class="tecla" onclick="introduce(document.getElementById('tecla_punto').innerHTML)">.</button>
+        <button id="tecla_0" class="tecla" onclick="introduce(document.getElementById('tecla_0').innerHTML)">0</button>
+        <button id="tecla_clear" class="tecla" style="background-color: orange;" onclick="clear()">C</button>
+        
+        <button class="tecla_op" onclick="operacion(4)">/</button>
+        
+        <button class="tecla_igual" onclick="result()">=</button>
+      </div>
+  </div>
+  </body>
+  <script src="Nivel3_main.js"></script>
+</html>
