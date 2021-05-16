@@ -10,8 +10,18 @@ function clear(){
    
 }
 function introduce(number){
-  var ram1 = document.getElementById('operador_1').innerHTML;  // mirar quitar 0 delante. Poner tope de coma.
+  var ram1 = document.getElementById('operador_1').innerHTML;  // Poner tope de coma.
   var ram2 = number;  
+
+  if( ram1=="" && ram2 == "."){
+    document.getElementById('operador_1').innerHTML = "0.";
+    return;
+  }
+
+  if( ram1 == "0" ){                           
+    document.getElementById('operador_1').innerHTML = ram2;
+    return;
+  }
 
   document.getElementById('operador_1').innerHTML = ram1+ram2;
 }
@@ -30,7 +40,6 @@ function result(){
     document.getElementById('operador_2').innerHTML = "";
     document.getElementById('operador_1').innerHTML = 'Error';
     return;
-   
   }
   
   switch(option){
